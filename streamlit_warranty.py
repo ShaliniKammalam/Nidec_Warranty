@@ -1495,17 +1495,4 @@ def main():
 
 # Run the app
 if __name__ == "__main__":
-    # If running as an executable, launch the app in the default browser
-    if getattr(sys, 'frozen', False):
-        # Detect the executable environment
-        filename = sys.executable  # The path to the executable
-    else:
-        filename = __file__
-
-    # Automatically open the browser
-    webbrowser.open(f"http://localhost:{os.getenv('PORT', 8501)}")
-
-    # Set up and run the Streamlit app
-    sys.argv = ["streamlit", "run", filename, "--server.enableCORS=false", "--server.enableXsrfProtection=false"]
-    from streamlit.web import cli as stcli
-    sys.exit(stcli.main())
+    main()
