@@ -1212,7 +1212,7 @@ def main():
 
         # Extract all available Fiscal Years from the dataset
         fiscal_years = extract_fiscal_years(data)
-        st.sidebar.image('NidecPower.png', width=230)
+        st.sidebar.image('https://github.com/ShaliniKammalam/Nidec_Warranty/blob/3a7f0a45f2d76f61812c43c6646a0b6f1737a335/NidecPower.png', width=230)
 
         # Sidebar table selection
         selected_table = st.sidebar.selectbox("Select Table", ["Cumulative Data", "Complaints", 
